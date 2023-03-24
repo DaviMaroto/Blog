@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+scroll-padding-top: 2rem;
+box-sizing: border-box;
+}
+
+:root{
+    --container-color: #1a1e21;
+    --second-color: #13AFF0;
+    --text-color: #172317;
+    --bg-color: #FFF;
+}
+::selection{
+    color: var(--bg-color);
+    background: var(--second-color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bg-color);
+}
+.logo span{
+    color: var(--second-color);
+}
+.github{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--second-color);
+    color: var(--bg-color);
+}
+.github:hover{
+    background: hsl(251, 96%, 46%);
+    transition: 0.3s;
+}
+.home{
+    width: 100%;
+    min-height: 400px;
+    background: var(--container-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.home-text{
+    color: var(--bg-color);
+    text-align: center;
+}
